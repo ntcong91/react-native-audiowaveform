@@ -50,7 +50,7 @@ def getExtOrDefault(name, defaultValue) {
     return rootProject.ext.has(name) ? rootProject.ext.get(name) : defaultValue
 }
 
-ndroid {
+android {
     compileSdkVersion getExtOrDefault('compileSdkVersion', 30)
     buildToolsVersion getExtOrDefault('buildToolsVersion', '29.0.3')
 
