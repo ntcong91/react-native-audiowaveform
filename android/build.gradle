@@ -4,12 +4,12 @@ import java.nio.file.Paths
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.3"
+    compileSdkVersion 34
+    buildToolsVersion "34.0.0"
 
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 22
+        minSdkVersion 23
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
         ndk {
@@ -51,12 +51,12 @@ def getExtOrDefault(name, defaultValue) {
 }
 
 android {
-    compileSdkVersion getExtOrDefault('compileSdkVersion', 30)
-    buildToolsVersion getExtOrDefault('buildToolsVersion', '29.0.3')
+    compileSdkVersion getExtOrDefault('compileSdkVersion', 34)
+    buildToolsVersion getExtOrDefault('buildToolsVersion', '34.0.0')
 
     defaultConfig {
-        minSdkVersion getExtOrDefault('minSdkVersion', 21)
-        targetSdkVersion getExtOrDefault('targetSdkVersion', 31)
+        minSdkVersion getExtOrDefault('minSdkVersion', 23)
+        targetSdkVersion getExtOrDefault('targetSdkVersion', 34)
         versionCode 1
         versionName "1.0"
         buildConfigField "boolean", "IS_NEW_ARCHITECTURE_ENABLED", isNewArchitectureEnabled().toString()
